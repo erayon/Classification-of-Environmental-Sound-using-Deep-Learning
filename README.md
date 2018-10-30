@@ -72,3 +72,6 @@ where [0,49] are the class in numeric format and there target.
 - Here I use “librosa” is a python package for music and audio analysis. It provides the building blocks necessary to create music information retrieval systems. windows and extract_feature are the two methods we need to prepare the data (both features and labels) for CNN. 
 - Iterate over file the folder but as you mentioned in the description that each sound is 5 second long, I need to replicate it to make 10 second long i.e. double the duration of each sound. That will be taken care by extracte_feature methods and then calculate above-mentioned features along with class labels and append them to arrays.
 - Now the audio file is represented as a 60(bands) x 41(frames) x 2(channel) spectrogram image.
+
+# Block diagram
+<img src="classification_image.png" alt="block diagram" title="block diagram"  />
