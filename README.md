@@ -49,13 +49,12 @@ https://github.com/karoldvl/ESC-50
   
 -  So from there one can easily create the dataset based on input (.wav) and its corresponding target(class in numeric format[0,49]).
 
-- For example:
-1-16746-A-15.wav ~ class 15
-1-18631-A-23.wav ~ class 23
-  and so on.
+- [`Example`]:
+  - 1-16746-A-15.wav ~ class 15
+  - 1-18631-A-23.wav ~ class 2 and so on.
 - Also one can get the category name as well as from the meta/esc50.csv. 
 where [0,49] are the class in numeric format and there target.
-{0: 'dog', 1: 'rooster', 2: 'pig', 3: 'cow', 4: 'frog', 5: 'cat', 6: 'hen', 7: 'insects', 8: 'sheep',
+   {0: 'dog', 1: 'rooster', 2: 'pig', 3: 'cow', 4: 'frog', 5: 'cat', 6: 'hen', 7: 'insects', 8: 'sheep',
  9: 'crow', 10: 'rain', 11: 'sea_waves', 12: 'crackling_fire', 13: 'crickets',
  14: 'chirping_birds', 15: 'water_drops', 16: 'wind', 17: 'pouring_water', 18: 'toilet_flush',
  19: 'thunderstorm', 20: 'crying_baby', 21: 'sneezing', 22: 'clapping', 23: 'breathing',
