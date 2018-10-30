@@ -21,3 +21,28 @@ The dataset consists of 5-second-long recordings organized into 50 semantical cl
 Each sound is 5 second long, this project change it to 10 second long i.e. double the duration of each sound.
 Please go to this link for more details from here:
 https://github.com/karoldvl/ESC-50 
+
+# Explain Dataset (Presprocessing)
+- [`audio/*.wav`](audio/)
+
+  2000 audio recordings in WAV format (5 seconds, 44.1 kHz, mono) with the following naming convention:
+  
+  `{FOLD}-{CLIP_ID}-{TAKE}-{TARGET}.wav`
+  
+  - `{FOLD}` - index of the cross-validation fold,
+  - `{CLIP_ID}` - ID of the original Freesound clip,
+  - `{TAKE}` - letter disambiguating between different fragments from the same Freesound clip,
+  - `{TARGET}` - class in numeric format [0, 49].
+
+- [`meta/esc50.csv`](meta/esc50.csv)
+
+  CSV file with the following structure:
+  
+  | <sub>filename</sub> | <sub>fold</sub> | <sub>target</sub> | <sub>category</sub> | <sub>esc10</sub> | <sub>src_file</sub> | <sub>take</sub> |
+  | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+  
+  The `esc10` column indicates if a given file belongs to the *ESC-10* subset (10 selected classes, CC BY license).
+  
+- [`meta/esc50-human.xlsx`](meta/esc50-human.xlsx)
+
+  Additional data pertaining to the crowdsourcing experiment (human classification accuracy).
