@@ -75,26 +75,26 @@ where [0,49] are the class in numeric format and there target.
 
 # Block diagram
 <img src="classification_image.png" alt="block diagram" title="block diagram"  />
-- Convolutional input layer, 32 feature maps with a size of 3×3 and a rectifier activation function.
-- Dropout layer at 20%.
-- Convolutional layer, 32 feature maps with a size of 3×3 and a rectifier activation function.
-- Max Pool layer with size 2×2.
-- Convolutional layer, 64 feature maps with a size of 3×3 and a rectifier activation function.
-- Dropout layer at 20%.
-- Convolutional layer, 64 feature maps with a size of 3×3 and a rectifier activation function.
-- Max Pool layer with size 2×2.
-- Convolutional layer, 128 feature maps with a size of 3×3 and a rectifier activation function.
-- Dropout layer at 20%.
-- Convolutional layer,128 feature maps with a size of 3×3 and a rectifier activation function.
-- Max Pool layer with size 2×2.
-- Flatten layer.
-- Dropout layer at 20%.
-- Fully connected layer with 1024 units and a rectifier activation function.
-- Dropout layer at 20%.
-- Fully connected layer with 512 units and a rectifier activation function.
-- Dropout layer at 20%.
-- Fully connected output layer with 50 units and a softmax activation function.
+* Convolutional input layer, 32 feature maps with a size of 3×3 and a rectifier activation function.
+* Dropout layer at 20%.
+* Convolutional layer, 32 feature maps with a size of 3×3 and a rectifier activation function.
+* Max Pool layer with size 2×2.
+* Convolutional layer, 64 feature maps with a size of 3×3 and a rectifier activation function.
+* Dropout layer at 20%.
+* Convolutional layer, 64 feature maps with a size of 3×3 and a rectifier activation function.
+* Max Pool layer with size 2×2.
+* Convolutional layer, 128 feature maps with a size of 3×3 and a rectifier activation function.
+* Dropout layer at 20%.
+* Convolutional layer,128 feature maps with a size of 3×3 and a rectifier activation function.
+* Max Pool layer with size 2×2.
+* Flatten layer.
+* Dropout layer at 20%.
+* Fully connected layer with 1024 units and a rectifier activation function.
+* Dropout layer at 20%.
+* Fully connected layer with 512 units and a rectifier activation function.
+* Dropout layer at 20%.
+* Fully connected output layer with 50 units and a softmax activation function.
 
-- Fit and evaluate this model using A logarithmic loss function is used with the stochastic gradient descent optimization algorithm configured with a large momentum and weight decay start with a learning rate of 0.01.
+* Fit and evaluate this model using A logarithmic loss function is used with the stochastic gradient descent optimization algorithm configured with a large momentum and weight decay start with a learning rate of 0.01.
 Epochs 300 batch size of 50.
-- After training if we plot the loss and accuracy curve, we can see that there is a considerable difference between the training and validation loss. This indicates that the network has tried to memorize the training data and thus, is able to get better accuracy on it. This is a sign of Overfitting. But we have already used Dropout in the network, then why is it still overfitting.
+* After training if we plot the loss and accuracy curve, we can see that there is a considerable difference between the training and validation loss. This indicates that the network has tried to memorize the training data and thus, is able to get better accuracy on it. This is a sign of Overfitting. But we have already used Dropout in the network, then why is it still overfitting.
