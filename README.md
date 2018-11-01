@@ -108,8 +108,9 @@ Epochs 300 batch size of 50.
 - <img src='ImageDataGenerator.png' alt="ImageDataGenerator" title="ImageDataGenerator" />
 - That can be done using the ImageDataGenerator for data augmentation. This includes rotation of the image, shifting the image left/right/top/bottom by some amount, flip the image horizontally or vertically, shear or zoom the image etc.
   - Create the model and configure it.
-2.Create an ImageDataGenerator object and configure it using parameters for horizontal flip, and image translation.
-3.The datagen.flow() function generates batches of data, after performing the data transformations / augmentation specified during the instantiation of the data generator.
-4.The fit_generator function will train the model using the data obtained in batches from the datagen.flow function.
+  - Create an ImageDataGenerator object and configure it using parameters for horizontal flip, and image translation.
+  - The datagen.flow() function generates batches of data, after performing the data transformations / augmentation       
+    specified during the instantiation of the data generator.
+  - The fit_generator function will train the model using the data obtained in batches from the datagen.flow function.
 
 
