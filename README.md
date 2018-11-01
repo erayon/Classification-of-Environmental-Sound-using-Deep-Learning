@@ -103,4 +103,13 @@ Epochs 300 batch size of 50.
 
 <img src='accuracy_epoch_curve.png' alt="accuracy_epoch_curve" title="accuracy_epoch_curve" width="200" height="200" />
 
+# ImageDataGenerator
+- One of the major reasons for overfitting is that we don't have enough data to train your network. Apart from regularization, another very effective way to counter Overfitting is Data Augmentation. It is the process of artificially creating more images from the images you already have by changing the size, orientation etc of the image. It can be a tedious task but fortunately, this can be done in Keras using the ImageDataGenerator instance.
+- <img src='ImageDataGenerator.png' alt="ImageDataGenerator" title="ImageDataGenerator" />
+- That can be done using the ImageDataGenerator for data augmentation. This includes rotation of the image, shifting the image left/right/top/bottom by some amount, flip the image horizontally or vertically, shear or zoom the image etc.
+  - Create the model and configure it.
+2.Create an ImageDataGenerator object and configure it using parameters for horizontal flip, and image translation.
+3.The datagen.flow() function generates batches of data, after performing the data transformations / augmentation specified during the instantiation of the data generator.
+4.The fit_generator function will train the model using the data obtained in batches from the datagen.flow function.
+
 
