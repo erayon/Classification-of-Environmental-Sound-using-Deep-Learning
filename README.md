@@ -75,8 +75,8 @@ where [0,49] are the class in numeric format and there target.
 
 # Block diagram
 <img src="classification_image.png" alt="block diagram" title="block diagram"  />
-* Convolutional input layer, 32 feature maps with a size of 3×3 and a rectifier activation function.
-* Dropout layer at 20%.
+- Convolutional input layer, 32 feature maps with a size of 3×3 and a rectifier activation function.
+- Dropout layer at 20%.
 * Convolutional layer, 32 feature maps with a size of 3×3 and a rectifier activation function.
 * Max Pool layer with size 2×2.
 * Convolutional layer, 64 feature maps with a size of 3×3 and a rectifier activation function.
