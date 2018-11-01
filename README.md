@@ -74,7 +74,7 @@ where [0,49] are the class in numeric format and there target.
 - Now the audio file is represented as a 60(bands) x 41(frames) x 2(channel) spectrogram image.
 
 # Block diagram
-<img src="classification_image.png" alt="block diagram" title="block diagram"  />
+- <img src="classification_image.png" alt="block diagram" title="block diagram"  />
 - Convolutional input layer, 32 feature maps with a size of 3×3 and a rectifier activation function.
 - Dropout layer at 20%.
 * Convolutional layer, 32 feature maps with a size of 3×3 and a rectifier activation function.
