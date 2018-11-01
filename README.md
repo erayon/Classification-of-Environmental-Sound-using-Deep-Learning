@@ -101,6 +101,6 @@ where [0,49] are the class in numeric format and there target.
 Epochs 300 batch size of 50.
 * After training if we plot the loss and accuracy curve, we can see that there is a considerable difference between the training and validation loss. This indicates that the network has tried to memorize the training data and thus, is able to get better accuracy on it. This is a sign of Overfitting. But we have already used Dropout in the network, then why is it still overfitting.
 
-<img src='accuracy_epoch_curve.png' alt="accuracy_epoch_curve" title="accuracy_epoch_curve"  />
+<img src='accuracy_epoch_curve.png' alt="accuracy_epoch_curve" title="accuracy_epoch_curve" width="200" height="200" />
 
 
