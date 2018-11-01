@@ -74,7 +74,9 @@ where [0,49] are the class in numeric format and there target.
 - Now the audio file is represented as a 60(bands) x 41(frames) x 2(channel) spectrogram image.
 
 # Block diagram
-- <img src="classification_image.png" alt="block diagram" title="block diagram"  />
+<img src="classification_image.png" alt="block diagram" title="block diagram"  />
+
+# Layers Explain
 - Convolutional input layer, 32 feature maps with a size of 3×3 and a rectifier activation function.
 - Dropout layer at 20%.
 * Convolutional layer, 32 feature maps with a size of 3×3 and a rectifier activation function.
@@ -98,3 +100,5 @@ where [0,49] are the class in numeric format and there target.
 * Fit and evaluate this model using A logarithmic loss function is used with the stochastic gradient descent optimization algorithm configured with a large momentum and weight decay start with a learning rate of 0.01.
 Epochs 300 batch size of 50.
 * After training if we plot the loss and accuracy curve, we can see that there is a considerable difference between the training and validation loss. This indicates that the network has tried to memorize the training data and thus, is able to get better accuracy on it. This is a sign of Overfitting. But we have already used Dropout in the network, then why is it still overfitting.
+
+
